@@ -296,15 +296,15 @@ export default function Contact() {
                       value={formData.industry}
                       onChange={(e) => updateField("industry", e.target.value)}
                       onBlur={() => flushLead("abandoned")}
-                      className="rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm outline-none focus:border-accent"
+                      className="[color-scheme:dark] rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-white outline-none focus:border-accent"
                     >
-                      <option value="" disabled>
+                      <option value="" disabled className="bg-[#171b22] text-white/50">
                         Industry
                       </option>
-                      <option>Retail</option>
-                      <option>Restaurant</option>
-                      <option>Professional Clinic</option>
-                      <option>Other Service Business</option>
+                      <option className="bg-[#171b22] text-white">Retail</option>
+                      <option className="bg-[#171b22] text-white">Restaurant</option>
+                      <option className="bg-[#171b22] text-white">Professional Clinic</option>
+                      <option className="bg-[#171b22] text-white">Other Service Business</option>
                     </select>
                   </div>
                   <textarea
